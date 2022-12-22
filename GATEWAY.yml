@@ -7,7 +7,7 @@ eureka:
     gateway:
       routes:
       - id: fullstackserver
-        uri: lb://FULLSTACK-SERVICE
+        uri: lb://http://localhost:8081
         predicates:
         - Path=/**      
       
