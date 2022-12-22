@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: FULLSTACK-SERVICE
+
+    
+  datasource:
+    url: bolt://localhost:7687
+    username: neo4j
+    password: backend
