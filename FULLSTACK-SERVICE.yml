@@ -1,7 +1,3 @@
-spring:
-  application:
-    name: FULLSTACK-SERVICE
-
     
   datasource:
     url: bolt://localhost:7687
