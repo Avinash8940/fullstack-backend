@@ -2,12 +2,14 @@ eureka:
   client:
     service-url:
       default-zone: http://eureka-server
-      
-  cloud:
+spring:
+   cloud:
     gateway:
       routes:
       - id: fullstackserver
         uri: lb://FULLSTACK-SERVICE
         predicates:
-        - Path=/**      
-      
+        - Path=/**     
+
+
+
