@@ -3,8 +3,27 @@ eureka:
     service-url:
       default-zone: http://eureka-server
 spring:
+   main:
+    web-application-type: reactive
+    allow-bean-definition-overriding: true
    cloud:
     gateway:
+    
+      default-filters:
+
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+
+      globalcors:
+
+        corsConfigurations:
+
+          '[/**]':
+
+              allowedOrigins: "*"
+
+              allowedMethods: "*"
+
+              allowedHeaders: "*"
       routes:
       - id: fullstackserver
         uri: lb://FULLSTACK-SERVICE
