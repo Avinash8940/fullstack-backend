@@ -28,11 +28,11 @@ spring:
       - id: fullstackserver
         uri: lb://FULLSTACK-SERVICE
         predicates:
-        - Path=book-crudApi/** 
+        - Path=/book-crudApi/** 
       - id: fullstackserver
         uri: lb://FULLSTACK-RETRIEVE
         predicates:
-        - Path=book-getApi/**   
+        - Path=/book-getApi/**   
 
 
 
