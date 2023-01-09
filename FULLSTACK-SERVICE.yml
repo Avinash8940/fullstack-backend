@@ -4,12 +4,13 @@ spring:
         authentication:
             username: neo4j
             password: password
-            
-    security:
+           
+    
+
+  security:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri : http://localhost:8080/realms/book-realm
-          
+          issuer-uri : http://localhost:8080/realms/book-realm 
     main:
     allow-circular-references: true      
